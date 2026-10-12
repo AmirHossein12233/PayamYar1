@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PayamYar</string>
+    <string name="title_activity_main">PayamYar</string>
+    <string name="package_name">com.payamyar.app</string>
+    <string name="custom_url_scheme">com.payamyar.app</string>
+</resources>
