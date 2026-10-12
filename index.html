@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101828">
+  <title>پیام‌یار</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">پ</div>
+    <div>
+      <h1>پیام‌یار</h1>
+      <p>پیام بده، صحبت کن</p>
+    </div>
+    <span class="online-dot"></span>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <span class="welcome-icon">💬</span>
+      <h2>به پیام‌یار خوش آمدی</h2>
+      <p>پیام‌رسان شخصی تو برای گفتگو و تماس صوتی</p>
+    </section>
+
+    <section class="profile">
+      <label for="username">نام نمایشی تو</label>
+      <div class="profile-row">
+        <input id="username" maxlength="24" placeholder="نامت را وارد کن">
+        <button id="saveName">ذخیره</button>
+      </div>
+      <p id="profileStatus">برای شروع، یک نام انتخاب کن.</p>
+    </section>
+
+    <section class="actions">
+      <button class="action-card" id="messagesButton">
+        <span>💬</span>
+        <strong>پیام‌ها</strong>
+        <small>گفتگوی متنی</small>
+      </button>
+      <button class="action-card" id="callsButton">
+        <span>📞</span>
+        <strong>تماس صوتی</strong>
+        <small>صحبت با دیگران</small>
+      </button>
+    </section>
+
+    <section class="chat-panel" id="chatPanel">
+      <h2>گفتگوی متنی</h2>
+      <p class="notice">این نسخه هنوز به اینترنت و کاربران دیگر متصل نیست. پیام‌رسانی آنلاین را در مرحله بعد اضافه می‌کنیم.</p>
+      <div id="messages" class="messages">
+        <div class="empty">هنوز پیامی وجود ندارد.</div>
+      </div>
+      <form id="messageForm">
+        <input id="messageInput" maxlength="1000" placeholder="پیامت را بنویس..." autocomplete="off">
+        <button type="submit" aria-label="ارسال پیام">➤</button>
+      </form>
+      <p class="hint">فعلاً پیام‌ها فقط روی همین صفحه نمایشی هستند.</p>
+    </section>
+
+    <section class="call-panel" id="callPanel">
+      <h2>تماس صوتی</h2>
+      <p>برای تماس واقعی بین دو گوشی، ابتدا باید اتصال آنلاین و WebRTC را راه‌اندازی کنیم.</p>
+      <button id="callInfo">مرحله بعد: راه‌اندازی تماس واقعی</button>
+      <p id="callStatus" class="hint"></p>
+    </section>
+  </main>
+
+  <footer>پیام‌یار · نسخه آزمایشی</footer>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
